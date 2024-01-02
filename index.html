@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izuzu Music</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <p>Izuzu Music.</p>
+            </div>
+            <div class="navList">
+                <ul>
+                    <li>Beranda</li>
+                    <li>Tentang Kami</li>
+                    <li>Layanan</li>
+                    <li>Produk</li>
+                    <li>Kontak</li>
+                </ul>
+            </div>
+            <div class="menu" onclick="menuTogle()" id="menu-togle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="text">
+                <h1>Selamat Datang di Izuzu Music</h1>
+                <p>Tempat Anda untuk Mencari Alat Marching Band Berkualitas</p>
+                <div class="btnHero">
+                    <button>Lihat Produk Kami</button>
+                    <Image src="assets/arrow_ (3).png" width={100} height={100} alt="arrow" />
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/marchingband.png" alt="marchingband">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="layanan-section">
+            <div class="layanan">
+                <h1>Layanan Kami</h1>
+            </div>
+            <div class="card-layanan">
+                <div class="card">
+                    <div class="number">
+                        <p>#satu</p>
+                    </div>
+                    <div class="title">
+                        <h2>Peminjaman</h2>
+                    </div>
+                    <div class="description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ab expedita ad consequuntur quis porro eligendi </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#dua</p>
+                    </div>
+                    <div class="title">
+                        <h2>Penyewaan</h2>
+                    </div>
+                    <div class="description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ab expedita ad consequuntur quis porro eligendi</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#tiga</p>
+                    </div>
+                    <div class="title">
+                        <h2>Penjualan</h2>
+                    </div>
+                    <div class="description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ab expedita ad consequuntur quis porro eligendi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-section">
+            <div class="product">
+                <h1>Product Kami</h1>
+            </div>
+            <div class="card-product">
+                <div class="card">
+                    <div class="number">
+                        <p>#satu</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/snare.png" alt="snare">
+                    </div>
+                    <div class="title">
+                        <h2>Snare Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi1" class="spesifikasi">
+                            <li>Size : 10", 12", 13", 14"</li>
+                            <li>Body : Tube 3-4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome jumlah 8</li>
+                            <li>Ring : Besi plat tebal 1.4 mm. finishing plating black</li>
+                            <li>Strainer : Model tuas chrome snare per</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi1')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#dua</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/Tenor drum.png" alt="Tenor">
+                    </div>
+                    <div class="title">
+                        <h2>Tenor Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi2" class="spesifikasi">
+                            <li>Size : 10", 12", 13", 14"</li>
+                            <li>Body : Tube 3-4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome jumlah 8</li>
+                            <li>Ring : Besi plat tebal 1.4 mm. finishing plating black</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi2')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#tiga</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/bass drum.png" alt="Bass">
+                    </div>
+                    <div class="title">
+                        <h2>Bass Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi3" class="spesifikasi">
+                            <li>Size : 13", 14", 18", 20", 22", 24"</li>
+                            <li>Body : Tube 4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome 13" & 14" jumlah 8, 16" & 20" jumlah 10, 22" & 24" jumlah 12 </li>
+                            <li>Clow : Besi plat finishing chrom</li>
+                            <li>Sing : Folk plat tebal 1.6 mm, finishing plating black</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi3')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#empat</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/snare.png" alt="snare">
+                    </div>
+                    <div class="title">
+                        <h2>Snare Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi4" class="spesifikasi">
+                            <li>Size : 10", 12", 13", 14"</li>
+                            <li>Body : Tube 3-4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome jumlah 8</li>
+                            <li>Ring : Besi plat tebal 1.4 mm. finishing plating black</li>
+                            <li>Strainer : Model tuas chrome snare per</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi4')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#lima</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/snare.png" alt="snare">
+                    </div>
+                    <div class="title">
+                        <h2>Snare Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi5" class="spesifikasi">
+                            <li>Size : 10", 12", 13", 14"</li>
+                            <li>Body : Tube 3-4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome jumlah 8</li>
+                            <li>Ring : Besi plat tebal 1.4 mm. finishing plating black</li>
+                            <li>Strainer : Model tuas chrome snare per</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi5')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="number">
+                        <p>#enam</p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/snare.png" alt="snare">
+                    </div>
+                    <div class="title">
+                        <h2>Snare Drum</h2>
+                    </div>
+                    <div class="description">
+                        <ul id="spesifikasi6" class="spesifikasi">
+                            <li>Size : 10", 12", 13", 14"</li>
+                            <li>Body : Tube 3-4 plywood @ 2.2 mm </li>
+                            <li>Lug : Cor alumunium chrome jumlah 8</li>
+                            <li>Ring : Besi plat tebal 1.4 mm. finishing plating black</li>
+                            <li>Strainer : Model tuas chrome snare per</li>
+                            <li>Head and Bottom : Maxtone / rolling (Taiwan)</li>
+                            <li>Baut : Import</li>
+                            <li>Include : Sling / Pemukul</li>
+                            <li>Color : Glitter gradalin silver, gold, red, green blue, purple, orange, or request</li>
+                        </ul>
+                    </div>
+                    <div class="btn-show">
+                        <button onclick="show('spesifikasi6')">Lihat Lebih Lengkap</button>
+                    </div>
+                    <div class="btn-pesan">
+                        <button>Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimoni">
+            <h1>Testimoni</h1>
+            <div class="testimoni-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure facere sed labore suscipit quia magni aut. Dignissimos facere reprehenderit voluptate delectus ea, quidem consectetur iusto. Et magni minima aliquid mollitia?</p>
+                                <span class="author">- Author 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium iste numquam error molestiae ipsa, et ut odio animi! Voluptate, non voluptatum obcaecati soluta expedita blanditiis repellat! Tempore, esse ipsam.</p>
+                                <span class="author">- Author 2</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus incidunt vel corrupti delectus iste dolore vitae temporibus minus dolorem beatae sequi, eligendi veritatis illum assumenda culpa. Sint debitis maiores alias?</p>
+                                <span class="author">- Author 3</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, commodi incidunt ipsa inventore reprehenderit minima perspiciatis, consequuntur, ullam tempora ut nihil nulla dicta eligendi velit ab eius dignissimos cumque optio?</p>
+                                <span class="author">- Author 3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

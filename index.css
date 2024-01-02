@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-color: #ffffff;
+    color: #040D12;
+    overflow-x: hidden;
+  }
+  
+  
+  header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header nav .navList ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  header nav .menu{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  header nav .menu span{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1px;
+    background-color: #000000;
+  }
+  
+  
+  
+  
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height: 90vh;
+  }
+
+  header .hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 100% ;
+  }
+
+  .hero .text{
+    max-width: 50rem;
+  }
+  
+  header .hero p{
+    font-size: 1em;
+    color: #000000;
+  }
+  
+  
+  header .hero h1{
+    font-size: 5em;
+    
+  }
+  
+  header .hero .btnHero{
+    margin-top: 1rem;
+    display: flex;
+  }
+  
+  header .hero .btnHero button{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #EE3224;
+    color: #ffffff;
+    border: 2px solid #EE3224;
+  }
+  
+  header .hero .btnHero img{
+    height: 2.5rem;
+    background-color: #EE3224;
+    padding: 10px;
+    margin-left: -2px;
+  }
+  
+
+  .hero .img{
+    max-width: 30rem;
+    padding: 1rem;
+  }
+
+  .hero .img img{
+    width: 100%;
+  }
+
+  .layanan-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem 1rem;
+    padding: 10rem 1rem;
+}
+
+.layanan h1, .product h1, .testimoni h1{
+    font-size: 3em;
+}
+
+.card-layanan{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    gap: 2rem;
+    row-gap: 5rem;
+}
+
+.card-layanan .card{
+    max-width: 20rem;
+    background-color: #f7f7f7;
+    padding: 5rem 2rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+}
+
+.card-layanan .description p{
+    color: #181823;
+}
+
+
+.card .number{
+    background-color: #EE3224;
+    color: #ffffff;
+    width: 6rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.product-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem;
+    padding: 5rem 1rem;
+    gap: 5rem;
+}
+
+.product-section .card-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    gap: 4rem;
+}
+
+.product-section .card{
+    max-width: 20rem;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(181,190,202,0.75);
+}
+
+.product-section .img{
+    max-width: 20rem;
+    padding: 2rem;
+}
+
+.product-section .img img{
+    width: 100%;
+}
+
+.product-section .spesifikasi{
+    list-style-type: none;
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.product-section .spesifikasi li{
+    display: flex;
+    gap: 1rem;
+}
+
+.product-section .spesifikasi li::before {
+    content: "\2713"; /* Kode Unicode untuk simbol centang */
+    display: inline-block; /* Atur lebar karakter */
+}
+
+.product-section .card .btn-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.product-section .card .btn-show button{
+    background-color: transparent;
+    border: none;
+    color: #EE3224;
+}
+
+.product-section .btn-pesan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.product-section .btn-pesan button{
+    width: 9rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #EE3224;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.spesifikasi.expanded{
+    height: 400px;
+    transition: height 0.5s ease-in-out;
+}
+
+
+.testimoni{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem 0;
+    padding: 10rem 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Gaya untuk swiper container */
+.swiper-container {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Gaya untuk setiap slide */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Gaya untuk testimoni */
+  .testimonial {
+    width: calc(100% - 2rem); /* Lebar testimoni dikurangi margin kiri dan kanan */
+    max-width: 20rem; /* Lebar maksimum testimoni */
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(181, 190, 202, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(181, 190, 202, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(181, 190, 202, 0.75);
+  }
+  
+  .author {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+  }
+
+  
