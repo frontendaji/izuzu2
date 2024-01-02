@@ -269,10 +269,12 @@
     width: 100%;
     position: relative;
     height: 100%;
-    overflow: hidden;
     
 }
 
+.testimoni-slider{
+    overflow-x: hidden;
+}
 /* Gaya untuk swiper container */
 .swiper-container {
     width: 100vw;
@@ -281,6 +283,12 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  /* Untuk Chrome, Safari, dan Opera */
+.swiper-container::-webkit-scrollbar {
+    display: none; /* Menyembunyikan scrollbar */
+  }
+  
   
   /* Gaya untuk setiap slide */
   .swiper-slide {
