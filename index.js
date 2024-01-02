@@ -31,6 +31,11 @@ const swiper = new Swiper('.swiper-container', {
       },
     },
   });
+
+  document.querySelector('.swiper-container').addEventListener('touchmove', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+  
   
   
   
